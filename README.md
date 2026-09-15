@@ -68,7 +68,7 @@ const {
 } = require('@Cosmo1st/baileys');
 
 const client = makeWASocket({
-  browser: Browsers.poucode('Chrome'),
+  browser: Browsers.Cosmo1st('Chrome'),
   printQRInTerminal: true
 });
 ```
@@ -82,7 +82,7 @@ const {
 } = require('@Cosmo1st/baileys');
 
 const client = makeWASocket({
-  browser: Browsers.poucode('Chrome'),
+  browser: Browsers.Cosmo1st('Chrome'),
   printQRInTerminal: false,
   version: await fetchLatestWAWebVersion(),
   aiLabel: false // set true to show an AI label on messages sent by the bot
