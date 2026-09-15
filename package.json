@@ -1,8 +1,8 @@
 {
-  "name": "@poucode/baileys",
+  "name": "@Coamo1st/baileys",
   "type": "module",
   "version": "1.0.0",
-  "description": "A WebSockets library for interacting with WhatsApp Web \u2014 PouCode fork of Baileys",
+  "description": "A WebSockets library for interacting with WhatsApp Web \u2014 Cosmo fork of Baileys",
   "keywords": [
     "poucode",
     "baileys",
@@ -12,10 +12,10 @@
     "wa-bot",
     "whatsapp bot"
   ],
-  "homepage": "https://github.com/pou-code/Baileys",
+  "homepage": "https://github.com/Cosmo1st/baileys",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pou-code/Baileys.git"
+    "url": "git+https://github.com/Cosmo1st/baileys"
   },
   "license": "MIT",
   "author": "PouCode",
@@ -140,7 +140,7 @@
     "node": ">=20.0.0"
   },
   "bugs": {
-    "url": "https://github.com/pou-code/Baileys/issues"
+    "url": "https://github.com/Cosmo1st/baileys/issues"
   },
   "contributors": [
     "WhiskeySockets (original Baileys authors)"
