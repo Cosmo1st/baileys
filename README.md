@@ -1,8 +1,8 @@
-# <div align='center'>PouCode</div>
+# <div align='center'>Cosmo</div>
 
 <p align="center">
 
-  <img src="https://files.catbox.moe/i497x5.jpg" width="180" alt="Pou"/>
+  <img src="https://files.catbox.moe/toa296.jpg" width="180" alt="Pou"/>
 
 </p>
 
