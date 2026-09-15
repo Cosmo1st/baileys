@@ -22,13 +22,13 @@ This project is a fork built on top of [Baileys](https://github.com/WhiskeySocke
 ## Installation
 Install directly from GitHub (not published on npm registry):
 ```bash
-npm install github:pou-code/Baileys
+npm install github:Cosmo1st/baileys
 ```
 
 Or add it to your `package.json` manually:
 ```json
 "dependencies": {
-  "@poucode/baileys": "github:pou-code/Baileys"
+  "@Cosmo1st/baileys": "github:Cosmo1st/baileys"
 }
 ```
 
@@ -37,7 +37,7 @@ Already have a bot built on the original `@whiskeysockets/baileys` and don't wan
 name points to this fork:
 ```json
 "dependencies": {
-  "@whiskeysockets/baileys": "github:pou-code/Baileys"
+  "@whiskeysockets/baileys": "github:Cosmo1st/baileys"
 }
 ```
 With this alias, keep using `require('@whiskeysockets/baileys')` in your code as-is — npm will
@@ -45,7 +45,7 @@ resolve it to this fork under the hood.
 
 You can also pin to a specific branch or commit:
 ```bash
-npm install github:pou-code/Baileys#main
+npm install github:Coamo1st/Bailey Saya#main
 ```
 
 ## Import
@@ -53,7 +53,7 @@ npm install github:pou-code/Baileys#main
 const {
   default: makeWASocket,
   // other exports
-} = require('@poucode/baileys');
+} = require('@Cosmo1st/baileys');
 ```
 
 ---
@@ -65,7 +65,7 @@ const {
 const {
   default: makeWASocket,
   Browsers
-} = require('@poucode/baileys');
+} = require('@Cosmo1st/baileys');
 
 const client = makeWASocket({
   browser: Browsers.poucode('Chrome'),
@@ -79,7 +79,7 @@ const {
   default: makeWASocket,
   fetchLatestWAWebVersion,
   Browsers
-} = require('@poucode/baileys');
+} = require('@Cosmo1st/baileys');
 
 const client = makeWASocket({
   browser: Browsers.poucode('Chrome'),
@@ -100,7 +100,7 @@ console.log("Your pairing code: " + code);
 const {
   default: makeWASocket,
   makeInMemoryStore
-} = require('@poucode/baileys');
+} = require('@Cosmo1st/baileys');
 const pino = require('pino');
 
 const store = makeInMemoryStore({
@@ -134,21 +134,21 @@ logged into the same account). It does not affect delivery to the recipient.
 ```javascript
 // Sent to the recipient, but NOT synced to your other devices
 await client.relayMessage(m.chat, {
-  conversation: "Hello from PouCode"
+  conversation: "Hello from Cosmo"
 }, {
   noSelfSync: true
 });
 
 // Sent to the recipient AND synced to your other devices (default behavior)
 await client.relayMessage(m.chat, {
-  conversation: "Hello from PouCode"
+  conversation: "Hello from Cosmo"
 }, {
   noSelfSync: false
 });
 
 // Also works through sendMessage
 await client.sendMessage(m.chat, {
-  text: "Hello from PouCode"
+  text: "Hello from Cosmo"
 }, {
   noSelfSync: true
 });
@@ -157,7 +157,7 @@ await client.sendMessage(m.chat, {
 ## Send an orderMessage
 ```javascript
 const fs = require('fs');
-const thumbnail = fs.readFileSync('./pouthumb.jpg');
+const thumbnail = fs.readFileSync('./thumb.jpg');
 
 await client.sendMessage(m.chat, {
   thumbnail,
@@ -191,7 +191,7 @@ await client.relayMessage(m.chat, {
   productMessage: {
     title: "Product.pdf",
     description: "Product description",
-    thumbnail: { url: "./pouthumb.jpg" },
+    thumbnail: { url: "./thumb.jpg" },
     productId: "EXAMPLE_TOKEN",
     retailerId: "EXAMPLE_RETAILER_ID",
     url: "https://example.com",
@@ -212,7 +212,7 @@ await client.relayMessage(m.chat, {
 ## Send an interactiveMessage
 ```javascript
 await client.sendMessage(m.chat, {
-  image: { url: "./pouimg.jpg" },
+  image: { url: "./img.jpg" },
   text: "body",
   title: "title", // required when sending media
   footer: "footer",
@@ -272,7 +272,7 @@ await client.sendText(m.chat, "Hello!", {
 
 ## Send image
 ```javascript
-await client.sendImage(m.chat, { url: "./pouimg.jpg" }, "Caption", {
+await client.sendImage(m.chat, { url: "./img.jpg" }, "Caption", {
   contextInfo: {
     mentionedJid: [m.chat]
   }
@@ -308,7 +308,7 @@ await client.sendVideo(m.chat, { url: "./video.mp4" }, "Caption", {
 
 ## Send audio
 ```javascript
-await client.sendAudio(m.chat, { url: "./pouaudio.mp3" }, {
+await client.sendAudio(m.chat, { url: "./csmxaudio.mp3" }, {
   contextInfo: {
     mentionedJid: [m.chat]
   }
@@ -391,7 +391,7 @@ await client.statusMention(m.chat, {
 
 # Credits
 
-PouCode is a fork of [Baileys](https://github.com/WhiskeySockets/Baileys), originally created by
+Cosmo is fork of PouCode [Baileys](https://github.com/WhiskeySockets/Baileys), originally created by
 [Adhiraj Singh](https://github.com/adiwajshing) and maintained by the WhiskeySockets community.
 All credit for the underlying protocol implementation goes to the original authors and contributors.
 See [LICENSE](LICENSE) for the full license text and copyright notices.
